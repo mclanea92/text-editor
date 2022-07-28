@@ -44,12 +44,12 @@ module.exports = () => {
           },
         ]
       })
-      
+
     ],
 
     module: {
       rules: [
-       { //   adding path to grab css and make webpack 
+        { //   adding path to grab css and make webpack 
           test: /\.m?js$/,
           exclude: /node_modules/,
           use: {
@@ -57,7 +57,7 @@ module.exports = () => {
             options: {
               presets: ['@babel/preset-env'],
               plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime']
-            
+
             }
           }
         },
@@ -65,7 +65,6 @@ module.exports = () => {
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
         }
-        
       ],
     },
   };
