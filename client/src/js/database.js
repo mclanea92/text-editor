@@ -15,7 +15,7 @@ const initdb = async () =>
 
 export const putDb = async (id, value) => {
   console.log('PUT request to update the jateDB');
-  // connect to DB and version we want to use
+  // connect to DB and version we want to use 
   const jateDb = await openDB('jate', 1);
   // make new transaction...need to specify the DB we are posting to and the data privileges. 
   const tx = jateDb.transaction('jate', 'readwrite');

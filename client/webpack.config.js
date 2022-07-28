@@ -49,7 +49,7 @@ module.exports = () => {
 
     module: {
       rules: [
-        {
+       { //   adding path to grab css and make webpack 
           test: /\.m?js$/,
           exclude: /node_modules/,
           use: {
@@ -61,7 +61,7 @@ module.exports = () => {
             }
           }
         },
-        {
+        { // css imported here
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
         }
